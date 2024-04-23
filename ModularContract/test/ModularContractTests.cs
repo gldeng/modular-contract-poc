@@ -27,10 +27,6 @@ namespace AElf.Contracts.ModularContract
         [Fact]
         public async Task TestPausible()
         {
-            // Arrange
-            var inputValue = "Hello, World!";
-            var input = new StringValue { Value = inputValue };
-
             // Act
             await ModularContractStub.Pause.SendAsync(new Empty());
 
